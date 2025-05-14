@@ -1,0 +1,55 @@
+*,
+*::before, 
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-background);
+  color: var(--primary-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: calc(var(--size) * 4);
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: calc(var(--size) * 4);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-duration) ease;
+}
+
+a:hover {
+  color: var(--white-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, 
+input, 
+select, 
+textarea {
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}

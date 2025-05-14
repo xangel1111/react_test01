@@ -1,0 +1,59 @@
+/* css/modules/elements.css */
+
+/* Common elements styling */
+input, 
+textarea, 
+select {
+  background-color: rgba(254, 254, 254, 0.1);
+  border: 1px solid rgba(254, 254, 254, 0.2);
+  border-radius: var(--border-radius);
+  padding: calc(var(--size) * 4);
+  color: var(--primary-text);
+  transition: border-color var(--transition-duration) ease, 
+              box-shadow var(--transition-duration) ease;
+  width: 100%;
+}
+
+input:focus, 
+textarea:focus, 
+select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(35, 181, 232, 0.2);
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+label {
+  display: block;
+  margin-bottom: calc(var(--size) * 2);
+  color: var(--secondary-text);
+  font-size: 0.875rem;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--black-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--neutral-950);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-color);
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--primary-color);
+  color: var(--black-color);
+}
